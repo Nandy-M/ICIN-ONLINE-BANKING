@@ -1,0 +1,26 @@
+<table class="table table-bordered-md" style="overflow-x:auto;">
+    <thead>
+        <tr style="text-align: center">
+            <th>Request Number</th>
+            <th>Type of Account</th>
+            <th>Account Number</th>
+            <th>Applied Date</th>
+            <th>Loan Amount</th>
+            <th> Confirm Request ?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let loanrequest of loanrequests | filter:term" style="text-align: center">
+            <td>{{loanrequest.id}}</td>
+            <td>{{loanrequest.accType}}</td>
+            <td>{{loanrequest.account}}</td>
+            <td>{{loanrequest.date}}</td>
+            <td>{{loanrequest.loanAmount}}</td>
+            <td><button (click)="confirmRequest(loanrequest.account)" class="btn btn-primary">Confirm
+                    Request</button></td>
+
+        </tr>
+
+
+    </tbody>
+</table>

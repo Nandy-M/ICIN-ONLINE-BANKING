@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.admin.model.ChequebookRequest;
+import com.admin.model.LoanRequest;
 import com.admin.model.User;
 import com.admin.model.UserDisplay;
 import com.admin.service.impl.AdminServiceImpl;
@@ -80,6 +81,18 @@ public class AdminController {
 	public void confirmChequeBookRequest(@PathVariable("accNo") long accNo)
 	{
 		service.acceptChequebookRequest(accNo);
+	}
+	
+	@GetMapping("/loan/request/all")
+	public List<LoanRequest> getAllLoanRequests()
+	{
+		return service.getAllLoanRequests();
+	}
+	
+	@GetMapping("/user/{accNo}/loan/request/confirm")
+	public void confirmLoanRequest(@PathVariable("accNo") long accNo)
+	{
+		service.acceptLoanRequest(accNo);
 	}
 	
 	@GetMapping("/user/{username}/enable")
