@@ -1,4 +1,4 @@
-package com.admin.model;
+package com.icinbank.model;
 
 import java.time.LocalDate;
 
@@ -10,21 +10,25 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class LoanRequest {
+public class ChequebookRequest {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private long account;
 	private String accType;
-	private int loanAmount;
 	private boolean requestStatus;
 	private LocalDate date;
+	private int no_of_pages;
+	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
+	
+	
 	public long getAccount() {
 		return account;
 	}
@@ -36,12 +40,6 @@ public class LoanRequest {
 	}
 	public void setAccType(String accType) {
 		this.accType = accType;
-	}
-	public int getLoanAmount() {
-		return loanAmount;
-	}
-	public void setLoanAmount(int loanAmount) {
-		this.loanAmount = loanAmount;
 	}
 	public boolean isRequestStatus() {
 		return requestStatus;
@@ -55,11 +53,13 @@ public class LoanRequest {
 	public void setDate(LocalDate date) {
 		this.date = date;
 	}
-	@Override
-	public String toString() {
-		return "LoanRequest [id=" + id + ", account=" + account + ", accType=" + accType + ", loanAmount=" + loanAmount
-				+ ", requestStatus=" + requestStatus + ", date=" + date + "]";
+	public int getNo_of_pages() {
+		return no_of_pages;
+	}
+	public void setNo_of_pages(int no_of_pages) {
+		this.no_of_pages = no_of_pages;
 	}
 	
 	
+
 }

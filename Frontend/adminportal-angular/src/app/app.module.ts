@@ -8,13 +8,14 @@ import { EnableService } from './enable.service';
 import { DisableService } from './disable.service';
 import { UserAccountComponent } from './user-account/user-account.component';
 import { CheckbookRequestsComponent } from './checkbook-requests/checkbook-requests.component';
-import { LoanRequestsComponent } from './loan-requests/loan-requests.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthorizeRegistrationComponent } from './authorize-registration/authorize-registration.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { from } from 'rxjs';
-
+import { TranscationHistoryComponent } from './transcation-history/transcation-history.component';
+import { TransferDetailsComponent } from './transfer-details/transfer-details.component';
+import { LoanComponent } from './loan/loan.component';
 
 
 @NgModule({
@@ -23,8 +24,10 @@ import { from } from 'rxjs';
     LoginComponent,
     UserAccountComponent,
     CheckbookRequestsComponent,
-    LoanRequestsComponent,
     AuthorizeRegistrationComponent,
+    TranscationHistoryComponent,
+    TransferDetailsComponent,
+    LoanComponent,
 
 
   ],
@@ -33,7 +36,8 @@ import { from } from 'rxjs';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    ReactiveFormsModule
   ],
   providers: [EnableService, DisableService,],
   bootstrap: [AppComponent]

@@ -10,13 +10,11 @@ import org.springframework.stereotype.Service;
 
 import com.admin.dao.AccountRepository;
 import com.admin.dao.ChequeBookRequestsRepository;
-import com.admin.dao.LoanRequestsRepository;
 import com.admin.dao.SaccountRepository;
 import com.admin.dao.TransferRepository;
 import com.admin.dao.UserDisplayRepository;
 import com.admin.dao.UserRepository;
 import com.admin.model.ChequebookRequest;
-import com.admin.model.LoanRequest;
 import com.admin.model.Transfer;
 import com.admin.model.User;
 import com.admin.model.UserDisplay;
@@ -30,8 +28,6 @@ public class AdminServiceImpl implements AdminService{
 	@Autowired
 	private ChequeBookRequestsRepository chequeBookDAO;
 	
-	@Autowired
-	private LoanRequestsRepository loanDAO;
 	
 	@Autowired
 	private UserRepository userDao;
@@ -89,23 +85,6 @@ public class AdminServiceImpl implements AdminService{
 		}
 	}
 	
-	@Override
-	public void acceptLoanRequest(long accNo) {
-		String username = "";
-		loanDAO.setLoanInfoByAccount(accNo);
-		if(Long.toString(accNo).length() == 7) {
-			username = accDao.findByAccno(accNo).getUsername();
-		}
-		else {
-			username = sAccDao.findByAccno(accNo).getUsername();
-		}
-		try {
-			mailService.sendLoanConfirmedEmail1(username);
-		} catch (EmailException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
 
 	@Override
 	public void enableUser(String username) {
@@ -140,10 +119,7 @@ public class AdminServiceImpl implements AdminService{
 		return chequeBookDAO.findAllChequebookRequests();
 	}
 	
-	@Override
-	public List<LoanRequest> getAllLoanRequests() {
-		return loanDAO.findAllLoanRequests();
-	}
+	
 
 	@Override
 	public List<User> getAllUnauthorizedUsers() {
@@ -176,5 +152,6 @@ public class AdminServiceImpl implements AdminService{
 		}
 		
 	}
+
 
 }

@@ -28,6 +28,8 @@ export class HomeComponent implements OnInit {
       this.savingBalanceLocal = res.savingsBalance;
       this.primaryBalanceLocal = res.primaryBalance;
       localStorage.setItem("savingAccNo",this.savingAcc.toString());
+      localStorage.setItem("primaryAccNo",this.primaryAcc.toString());
+
     });
 
   }

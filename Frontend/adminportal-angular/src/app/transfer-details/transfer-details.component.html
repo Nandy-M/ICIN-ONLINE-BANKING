@@ -1,0 +1,20 @@
+<table class="table table-bordered-md" style="overflow-x: auto">
+  <thead>
+    <tr style="text-align: center">
+      <th>Id</th>
+      <th>Sender Account</th>
+      <th>Reciver Account</th>
+      <th>Transfer Amount</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of TransferData">
+      <td style="text-align: center">{{ transaction.id }}</td>
+      <td style="text-align: center">{{ transaction.saccount }}</td>
+      <td style="text-align: center">{{ transaction.raccount }}</td>
+      <td style="text-align: center">{{ transaction.amount }}</td>
+      <td style="text-align: center">{{ transaction.date }}</td>
+    </tr>
+  </tbody>
+</table>

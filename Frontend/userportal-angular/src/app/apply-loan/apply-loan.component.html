@@ -1,0 +1,70 @@
+<div class="container">
+  <form [formGroup]="transferForm" (ngSubmit)="transfer()" method="post">
+    <div class="col-xs-4" style="left: 35%">
+      <h2 style="text-align: center">Apply Loan</h2>
+    </div>
+    <br />
+
+    <div class="form-group" style="text-align: center">
+      <label>Account Number : </label> <label>{{ saccountno }} </label>
+    </div>
+
+    <div class="form-group">
+      <label>Enter the loan type</label>
+      <br />
+      <input
+        type="text"
+        formControlName="loanType"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && fval.loanType.errors }"
+        placeholder="Enter the loan type"
+      />
+      <div *ngIf="submitted && fval.loanType.errors" class="invalid-feedback">
+        <div *ngIf="fval.loanType.errors.required">Loan type is required</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Enter the loan amount</label>
+      <br />
+      <input
+        type="text"
+        formControlName="loanAmount"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && fval.loanAmount.errors }"
+        placeholder="Enter the amount"
+      />
+      <div *ngIf="submitted && fval.loanAmount.errors" class="invalid-feedback">
+        <div *ngIf="fval.loanAmount.errors.required">
+          Account number is required
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Select the date</label>
+      <br />
+      <input
+        type="date"
+        formControlName="date"
+        class="form-control"
+        [ngClass]="{ 'is-invalid': submitted && fval.date.errors }"
+        placeholder="Date"
+      />
+      <div *ngIf="submitted && fval.date.errors" class="invalid-feedback">
+        <div *ngIf="fval.date.errors.required">Date is required</div>
+      </div>
+    </div>
+
+    <div class="center1">
+      <button class="btn btn-primary" class="btn btn-info form-control">
+        <span
+          *ngIf="loading"
+          class="spinner-border spinner-border-sm mr-1"
+        ></span>
+        <a (click)="transfer()" style="color: white">Apply</a>
+      </button>
+      <h4 class="mx-4 my-5">{{ AppliedStatus }}</h4>
+    </div>
+  </form>
+</div>

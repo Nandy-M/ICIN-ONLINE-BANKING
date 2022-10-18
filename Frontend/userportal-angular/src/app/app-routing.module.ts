@@ -12,6 +12,9 @@ import { TransactionHistoryComponent } from './transaction-history/transaction-h
 import{ EditProfileComponent } from './edit-profile/edit-profile.component';
 import {AuthGuard} from './auth.guard';
 import { TransferHistoryComponent } from './transfer-history/transfer-history.component';
+import { ApplyLoanComponent } from './apply-loan/apply-loan.component';
+import { DepositComponent } from './deposit/deposit.component';
+import { WithdrawComponent } from './withdraw/withdraw.component';
 
 
 const routes: Routes = [
@@ -23,6 +26,9 @@ const routes: Routes = [
   {path: 'home', component:HomeComponent,canActivate:[AuthGuard]},
   {path:'transferHistory',component:TransferHistoryComponent,canActivate:[AuthGuard]},
   {path:'editProfile',component:EditProfileComponent,canActivate:[AuthGuard]},
+  {path:'applyloan', component:ApplyLoanComponent,canActivate:[AuthGuard]},
+  {path:'deposite', component:DepositComponent,canActivate:[AuthGuard]},
+  {path:'withdraw', component:WithdrawComponent,canActivate:[AuthGuard]},
   { path: '**', redirectTo: '/login' }
 
 ];

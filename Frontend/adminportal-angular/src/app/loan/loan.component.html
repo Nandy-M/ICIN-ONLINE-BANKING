@@ -1,0 +1,96 @@
+<table class="table table-bordered-md" style="overflow-x: auto">
+  <thead>
+    <tr style="text-align: center">
+      <th>ID</th>
+      <th>Account Number</th>
+      <th>Type of Loan</th>
+      <th>Loan Amount</th>
+      <th>Applied Date</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of LoanData" style="text-align: center">
+      <td style="text-align: center">{{ row.id }}</td>
+      <td style="text-align: center">{{ row.accountNumber }}</td>
+      <td style="text-align: center">{{ row.loanType }}</td>
+      <td style="text-align: center">{{ row.loanAmount }}</td>
+      <td style="text-align: center">{{ row.date }}</td>
+      <td style="text-align: center">{{ row.status }}</td>
+
+      <td>
+        <button
+          (click)="onEdit(row)"
+          type="button"
+          id="update"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+          class="btn btn-info"
+        >
+          Edit
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- modal -->
+
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">
+          Loan Request Approval Form
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Status</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="status"
+              id="status"
+              aria-describedby="emailHelp"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          id="cancel"
+          class="btn btn-secondary"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+
+        <button
+          type="button"
+          id="update"
+          (click)="updateLoanDetails()"
+          class="btn btn-primary"
+        >
+          Update
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

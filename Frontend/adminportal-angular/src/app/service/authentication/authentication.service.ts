@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 
 export class AuthenticationService {
-  private readonly adminUser = new LoginData('Akanksh', 'Mulka123');
+  private readonly adminUser = new LoginData('admin', '123456');
   isAuthenticated = false;
   constructor(private router: Router) { }
 

@@ -1,0 +1,20 @@
+<table class="table table-bordered-md" style="overflow-x: auto">
+  <thead>
+    <tr style="text-align: center">
+      <th>Id</th>
+      <th>Account Number</th>
+      <th>Type of Payment</th>
+      <th>Amount</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of TranscationData">
+      <td style="text-align: center">{{ transaction.id }}</td>
+      <td style="text-align: center">{{ transaction.amount }}</td>
+      <td style="text-align: center">{{ transaction.account }}</td>
+      <td style="text-align: center">{{ transaction.action }}</td>
+      <td style="text-align: center">{{ transaction.date }}</td>
+    </tr>
+  </tbody>
+</table>

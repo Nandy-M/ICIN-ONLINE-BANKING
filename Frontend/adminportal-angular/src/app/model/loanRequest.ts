@@ -1,8 +1,8 @@
 export class LoanRequest {
-    id: number;
-    accType: string;
-    username: string;
-    account: number;
-    date: string;
-    no_of_pages: number;
+    id: number = 0;
+    accountNumber: string = '';
+    loanType:  string = '';
+    loanAmount: string = '';
+    date: string = '';
+    status: string = '';
 }

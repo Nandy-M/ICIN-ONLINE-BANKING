@@ -10,11 +10,14 @@ import Swal from 'sweetalert2';
   templateUrl: './transfer-between-accounts.component.html',
   styleUrls: ['./transfer-between-accounts.component.css']
 })
+
 export class TransferBetweenAccountsComponent implements OnInit {
 
   constructor( private formBuilder: FormBuilder,
     private router: Router,
     private transferService: TransferService) { }
+
+
   transferForm: FormGroup;
   loading = false;
   submitted = false;

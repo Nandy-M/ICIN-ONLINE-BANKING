@@ -16,6 +16,9 @@ import { TransactionHistoryComponent } from './transaction-history/transaction-h
 import { TransferBetweenAccountsComponent } from './transfer-between-accounts/transfer-between-accounts.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { TransferHistoryComponent } from './transfer-history/transfer-history.component';
+import { ApplyLoanComponent } from './apply-loan/apply-loan.component';
+import { DepositComponent } from './deposit/deposit.component';
+import { WithdrawComponent } from './withdraw/withdraw.component';
 
 
 
@@ -30,6 +33,9 @@ import { TransferHistoryComponent } from './transfer-history/transfer-history.co
     TransferBetweenAccountsComponent,
     EditProfileComponent,
     TransferHistoryComponent,
+    ApplyLoanComponent,
+    DepositComponent,
+    WithdrawComponent,
   
   ],
   imports: [
@@ -38,6 +44,7 @@ import { TransferHistoryComponent } from './transfer-history/transfer-history.co
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule, // required animations module
+  
   ],
   providers: [RegisterService, LoginService, AuthService], //
   bootstrap: [AppComponent]
