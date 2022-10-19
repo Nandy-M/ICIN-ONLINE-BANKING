@@ -16,6 +16,7 @@ import { from } from 'rxjs';
 import { TranscationHistoryComponent } from './transcation-history/transcation-history.component';
 import { TransferDetailsComponent } from './transfer-details/transfer-details.component';
 import { LoanComponent } from './loan/loan.component';
+import { SampleComponent } from './sample/sample.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { LoanComponent } from './loan/loan.component';
     TranscationHistoryComponent,
     TransferDetailsComponent,
     LoanComponent,
+    SampleComponent,
 
 
   ],

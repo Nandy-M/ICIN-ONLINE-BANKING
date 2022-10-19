@@ -40,6 +40,7 @@ get fval() { return this.transferForm.controls; }
     if (this.transferForm.invalid) {
       return;
     }
+    if(this.transferForm.value.amount > 0){
     this.loading = true;
     const result:any = Object.assign({}, this.transferForm.value);
         
@@ -68,7 +69,13 @@ get fval() { return this.transferForm.controls; }
     }catch{
       this.loading=false;
     }
-      
+  }else{
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'enter positive digit',
+    })
+  }
 
   }
 }

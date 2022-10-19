@@ -8,6 +8,7 @@ import { AuthorizeRegistrationComponent } from './authorize-registration/authori
 import { TranscationHistoryComponent } from './transcation-history/transcation-history.component';
 import { TransferDetailsComponent } from './transfer-details/transfer-details.component';
 import { LoanComponent } from './loan/loan.component';
+import { SampleComponent } from './sample/sample.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -15,8 +16,9 @@ const routes: Routes = [
   { path: 'checkbook-requests', component: CheckbookRequestsComponent, canActivate: [AuthGuard] },
   { path: 'authorize', component: AuthorizeRegistrationComponent, canActivate: [AuthGuard] },
   {path: 'transcation', component:TranscationHistoryComponent, canActivate: [AuthGuard]},
-  {path: 'transfer', component:TransferDetailsComponent, canActivate: [AuthGuard]},
-  {path: 'loanrequest', component:LoanComponent, canActivate: [AuthGuard]}
+  {path: 'transfer', component:TransferDetailsComponent},
+  {path: 'loanrequest', component:LoanComponent, canActivate: [AuthGuard]},
+  {path:'smaple', component:SampleComponent}
 ];
 
 @NgModule({

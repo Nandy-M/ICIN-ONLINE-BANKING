@@ -1,4 +1,42 @@
-<table class="table table-bordered">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+    rel="stylesheet"
+    type="text/css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+<body>
+  <section class="ftco-section">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+      id="ftco-navbar"
+    >
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a routerLink="/smaple" class="nav-link">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+  </section>
+</body>
+
+<table class="table table-striped">
   <thead>
     <tr>
       <th class="alignment">First Name</th>
@@ -15,18 +53,32 @@
   </thead>
   <tbody>
     <tr *ngFor="let authorizeuser of authorizeusers">
-      <td class="alignment">{{authorizeuser.fname}}</td>
-      <td class="alignment">{{authorizeuser.lname}}</td>
-      <td class="alignment">{{authorizeuser.phone}}</td>
-      <td class="alignment">{{authorizeuser.address}}</td>
-      <td class="alignment">{{authorizeuser.dob}}</td>
-      <td class="alignment">{{authorizeuser.identityType}}</td>
-      <td class="alignment">{{authorizeuser.identity}}</td>
-      <td class="alignment">{{authorizeuser.email}}</td>
-      <td class="alignment"><button type="button" class="btn btn-success" (click)="authorizeAccount(authorizeuser.username)">Create</button> </td> 
-      <td class="alignment"><button type="button" class="btn btn-danger"(click)="rejectRequest(authorizeuser.username)">Cancel</button></td>
+      <td class="alignment">{{ authorizeuser.fname }}</td>
+      <td class="alignment">{{ authorizeuser.lname }}</td>
+      <td class="alignment">{{ authorizeuser.phone }}</td>
+      <td class="alignment">{{ authorizeuser.address }}</td>
+      <td class="alignment">{{ authorizeuser.dob }}</td>
+      <td class="alignment">{{ authorizeuser.identityType }}</td>
+      <td class="alignment">{{ authorizeuser.identity }}</td>
+      <td class="alignment">{{ authorizeuser.email }}</td>
+      <td class="alignment">
+        <button
+          type="button"
+          class="btn btn-success"
+          (click)="authorizeAccount(authorizeuser.username)"
+        >
+          Create
+        </button>
+      </td>
+      <td class="alignment">
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="rejectRequest(authorizeuser.username)"
+        >
+          Cancel
+        </button>
+      </td>
     </tr>
-
-  
   </tbody>
 </table>
