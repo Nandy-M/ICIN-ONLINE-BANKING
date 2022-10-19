@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-18T23:20:40 IST" name="Default suite" finished-at="2022-10-18T23:20:52 IST" duration-ms="12126">
+    <groups>
+    </groups>
+    <test started-at="2022-10-18T23:20:40 IST" name="Default test" finished-at="2022-10-18T23:20:52 IST" duration-ms="12126">
+      <class name="com.test.NewTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.test.NewTest@d5b810e]" started-at="2022-10-18T23:20:40 IST" name="launchBrowser" finished-at="2022-10-18T23:20:48 IST" duration-ms="7889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="login_Pass()[pri:0, instance:com.test.NewTest@d5b810e]" started-at="2022-10-18T23:20:48 IST" name="login_Pass" finished-at="2022-10-18T23:20:48 IST" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_Pass -->
+        <test-method signature="checkbookRequests()[pri:1, instance:com.test.NewTest@d5b810e]" started-at="2022-10-18T23:20:49 IST" name="checkbookRequests" finished-at="2022-10-18T23:20:49 IST" duration-ms="526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkbookRequests -->
+        <test-method signature="transactionHistory()[pri:2, instance:com.test.NewTest@d5b810e]" started-at="2022-10-18T23:20:49 IST" name="transactionHistory" finished-at="2022-10-18T23:20:50 IST" duration-ms="585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transactionHistory -->
+        <test-method signature="transferHistory()[pri:3, instance:com.test.NewTest@d5b810e]" started-at="2022-10-18T23:20:50 IST" name="transferHistory" finished-at="2022-10-18T23:20:50 IST" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferHistory -->
+        <test-method signature="authorization()[pri:4, instance:com.test.NewTest@d5b810e]" started-at="2022-10-18T23:20:50 IST" name="authorization" finished-at="2022-10-18T23:20:51 IST" duration-ms="513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- authorization -->
+        <test-method signature="loanRequests()[pri:5, instance:com.test.NewTest@d5b810e]" started-at="2022-10-18T23:20:51 IST" name="loanRequests" finished-at="2022-10-18T23:20:52 IST" duration-ms="1167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loanRequests -->
+      </class> <!-- com.test.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
