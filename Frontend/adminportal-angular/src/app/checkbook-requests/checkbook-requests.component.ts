@@ -27,6 +27,8 @@ export class CheckbookRequestsComponent implements OnInit {
   getData() {
 
   }
-
+  confirmRequest(account) {
+    this.checkbookService.confirmCheckbookService(account).subscribe(res=>this.ngOnInit());
+  }
 
 }
