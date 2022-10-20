@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\GOOD1\AppData\Local\Temp\testng-eclipse-1649673349\testng-customsuite.xml</span>
+                    <span>C:\Users\GOOD1\AppData\Local\Temp\testng-eclipse-287228551\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -124,12 +124,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.test.NewTest" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.test.NewTest" class="method navigator-link" hash-for-method="transactionHistory">transactionHistory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.test.NewTest" class="method navigator-link" hash-for-method="transferHistory">transferHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.test.NewTest" class="method navigator-link" hash-for-method="userAccountInfo">userAccountInfo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -180,6 +190,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="transactionHistory">
                   </a> <!-- transactionHistory -->
                   <span class="method-name">transactionHistory</span>
@@ -192,12 +209,19 @@
                   <span class="method-name">transferHistory</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userAccountInfo">
+                  </a> <!-- userAccountInfo -->
+                  <span class="method-name">userAccountInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\GOOD1\AppData\Local\Temp\testng-eclipse-1649673349\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\GOOD1\AppData\Local\Temp\testng-eclipse-287228551\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -246,36 +270,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loanRequests')
+data.setCell(0, 1, 'login_Pass')
 data.setCell(0, 2, 'com.test.NewTest')
-data.setCell(0, 3, 1167);
+data.setCell(0, 3, 9812);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login_Pass')
+data.setCell(1, 1, 'checkbookRequests')
 data.setCell(1, 2, 'com.test.NewTest')
-data.setCell(1, 3, 754);
+data.setCell(1, 3, 1038);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'transferHistory')
+data.setCell(2, 1, 'userAccountInfo')
 data.setCell(2, 2, 'com.test.NewTest')
-data.setCell(2, 3, 592);
+data.setCell(2, 3, 881);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'transactionHistory')
+data.setCell(3, 1, 'transferHistory')
 data.setCell(3, 2, 'com.test.NewTest')
-data.setCell(3, 3, 585);
+data.setCell(3, 3, 836);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'checkbookRequests')
+data.setCell(4, 1, 'loanRequests')
 data.setCell(4, 2, 'com.test.NewTest')
-data.setCell(4, 3, 526);
+data.setCell(4, 3, 836);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'authorization')
+data.setCell(5, 1, 'transactionHistory')
 data.setCell(5, 2, 'com.test.NewTest')
-data.setCell(5, 3, 513);
+data.setCell(5, 3, 789);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'authorization')
+data.setCell(6, 2, 'com.test.NewTest')
+data.setCell(6, 3, 730);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'logout')
+data.setCell(7, 2, 'com.test.NewTest')
+data.setCell(7, 3, 241);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -308,27 +340,35 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login_Pass</span>
-                <span class="method-start">7945 ms</span>
+                <span class="method-start">6908 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userAccountInfo</span>
+                <span class="method-start">16728 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">checkbookRequests</span>
-                <span class="method-start">8708 ms</span>
+                <span class="method-start">17610 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">transactionHistory</span>
-                <span class="method-start">9240 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">transferHistory</span>
-                <span class="method-start">9829 ms</span>
+                <span class="method-start">18649 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">authorization</span>
-                <span class="method-start">10423 ms</span>
+                <span class="method-start">19439 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">transferHistory</span>
+                <span class="method-start">20170 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loanRequests</span>
-                <span class="method-start">10942 ms</span>
+                <span class="method-start">21007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">21844 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
