@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-20T14:06:24 IST" name="Default suite" finished-at="2022-10-20T14:06:47 IST" duration-ms="22094">
+  <suite started-at="2022-10-20T23:30:13 IST" name="Default suite" finished-at="2022-10-20T23:30:29 IST" duration-ms="16855">
     <groups>
     </groups>
-    <test started-at="2022-10-20T14:06:24 IST" name="Default test" finished-at="2022-10-20T14:06:47 IST" duration-ms="22094">
+    <test started-at="2022-10-20T23:30:13 IST" name="Default test" finished-at="2022-10-20T23:30:29 IST" duration-ms="16855">
       <class name="com.test.NewTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T14:06:24 IST" name="launchBrowser" finished-at="2022-10-20T14:06:31 IST" duration-ms="6883" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T23:30:13 IST" name="launchBrowser" finished-at="2022-10-20T23:30:22 IST" duration-ms="9271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="login_Pass()[pri:0, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T14:06:31 IST" name="login_Pass" finished-at="2022-10-20T14:06:41 IST" duration-ms="9812" status="PASS">
+        <test-method signature="login_Pass()[pri:0, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T23:30:22 IST" name="login_Pass" finished-at="2022-10-20T23:30:23 IST" duration-ms="1594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login_Pass -->
-        <test-method signature="userAccountInfo()[pri:1, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T14:06:41 IST" name="userAccountInfo" finished-at="2022-10-20T14:06:42 IST" duration-ms="881" status="PASS">
+        <test-method signature="userAccountInfo()[pri:1, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T23:30:23 IST" name="userAccountInfo" finished-at="2022-10-20T23:30:24 IST" duration-ms="1022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userAccountInfo -->
-        <test-method signature="checkbookRequests()[pri:2, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T14:06:42 IST" name="checkbookRequests" finished-at="2022-10-20T14:06:43 IST" duration-ms="1038" status="PASS">
+        <test-method signature="checkbookRequests()[pri:2, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T23:30:24 IST" name="checkbookRequests" finished-at="2022-10-20T23:30:25 IST" duration-ms="1002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkbookRequests -->
-        <test-method signature="transactionHistory()[pri:3, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T14:06:43 IST" name="transactionHistory" finished-at="2022-10-20T14:06:44 IST" duration-ms="789" status="PASS">
+        <test-method signature="transactionHistory()[pri:3, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T23:30:26 IST" name="transactionHistory" finished-at="2022-10-20T23:30:26 IST" duration-ms="919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transactionHistory -->
-        <test-method signature="authorization()[pri:4, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T14:06:44 IST" name="authorization" finished-at="2022-10-20T14:06:45 IST" duration-ms="730" status="PASS">
+        <test-method signature="authorization()[pri:4, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T23:30:26 IST" name="authorization" finished-at="2022-10-20T23:30:27 IST" duration-ms="652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authorization -->
-        <test-method signature="transferHistory()[pri:4, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T14:06:45 IST" name="transferHistory" finished-at="2022-10-20T14:06:45 IST" duration-ms="836" status="PASS">
+        <test-method signature="transferHistory()[pri:4, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T23:30:27 IST" name="transferHistory" finished-at="2022-10-20T23:30:28 IST" duration-ms="888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transferHistory -->
-        <test-method signature="loanRequests()[pri:5, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T14:06:45 IST" name="loanRequests" finished-at="2022-10-20T14:06:46 IST" duration-ms="836" status="PASS">
+        <test-method signature="loanRequests()[pri:5, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T23:30:28 IST" name="loanRequests" finished-at="2022-10-20T23:30:29 IST" duration-ms="1050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loanRequests -->
-        <test-method signature="logout()[pri:6, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T14:06:46 IST" name="logout" finished-at="2022-10-20T14:06:47 IST" duration-ms="241" status="PASS">
+        <test-method signature="logout()[pri:6, instance:com.test.NewTest@1de76cc7]" started-at="2022-10-20T23:30:29 IST" name="logout" finished-at="2022-10-20T23:30:29 IST" duration-ms="350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->

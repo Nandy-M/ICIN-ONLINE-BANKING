@@ -5,6 +5,9 @@
     <classes>
       <class name="com.test.NewTest">
         <methods>
+          <include name="transferHistory"/>
+          <include name="authorization"/>
+          <include name="logout"/>
           <include name="loanRequests"/>
           <include name="launchBrowser"/>
         </methods>

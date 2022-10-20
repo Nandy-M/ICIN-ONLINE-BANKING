@@ -63,7 +63,7 @@ public class NewTest {
 				.click();
 		Thread.sleep(300);
 		// Confirm Request Button
-		driver.findElement(By.xpath("/html/body/app-root/app-checkbook-requests/table/tbody/tr/td[6]/button")).click();
+		//driver.findElement(By.xpath("/html/body/app-root/app-checkbook-requests/table/tbody/tr/td[6]/button")).click();
 		System.out.println("ChequeRequest Confirmed");
 		// home
 		driver.findElement(By.xpath("//*[@id=\"ftco-nav\"]/ul/li/a")).click();
@@ -103,8 +103,8 @@ public class NewTest {
 		driver.findElement(By.xpath("/html/body/app-root/app-sample/main/div/div/div[2]/div/div/div[2]/div[4]/a/span"))
 				.click();
 		// Create Account Button
-		driver.findElement(By.xpath("/html/body/app-root/app-authorize-registration/table/tbody/tr/td[9]")).click();
-		System.out.println("Authorized");
+//		driver.findElement(By.xpath("/html/body/app-root/app-authorize-registration/table/tbody/tr/td[9]")).click();
+//		System.out.println("Authorized");
 //		// Cancel Button
 //		driver.findElement(By.xpath("/html/body/app-root/app-authorize-registration/table/tbody/tr[2]/td[10]/button"))
 //				.click();
