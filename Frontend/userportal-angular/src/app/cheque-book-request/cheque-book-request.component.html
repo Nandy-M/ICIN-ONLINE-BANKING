@@ -1,24 +1,70 @@
-<div class="container col-xs-4">
-  <h3 style="text-align: center">Request Cheque Book</h3>
-  <div class="form-group">
-    <div style="text-align: center" class="form-group">
-      <label>Account Number :&nbsp;</label> <label>{{ requestingAccNo }}</label>
+<section class="ftco-section">
+  <nav
+    class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+    id="ftco-navbar"
+  >
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#ftco-nav"
+        aria-controls="ftco-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="fa fa-bars"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a routerLink="/dashboard" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a routerLink="/home" class="nav-link">Check Balance</a>
+          </li>
+          <li class="nav-item active">
+            <a routerLink="/editProfile" class="nav-link">Profile setting</a>
+          </li>
+          <li class="nav-item active">
+            <a routerLink="/login" class="nav-link">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+<body>
+  <div class="container col-xs-4">
+    <h3 style="text-align: center">Request Cheque Book</h3>
+    <div class="form-group">
+      <div style="text-align: center" class="form-group">
+        <label>Account Number :&nbsp;</label>
+        <label>{{ requestingAccNo }}</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>ChequeBook pages</label>
+      <br />
+      <select
+        class="form-control"
+        (change)="filterSelected($event.target.value)"
+      >
+        <option *ngFor="let p of pages" [value]="p.value">
+          {{ p.name }}
+        </option>
+      </select>
+      <br />
+      <button (click)="setOption()" class="btn btn-info form-control">
+        <span
+          *ngIf="loading"
+          class="spinner-border spinner-border-sm mr-1"
+        ></span
+        >Request Chequebook
+      </button>
+      <br />
     </div>
   </div>
-
-  <div class="form-group">
-    <label>ChequeBook pages</label>
-    <br />
-    <select class="form-control" (change)="filterSelected($event.target.value)">
-      <option *ngFor="let p of pages" [value]="p.value">
-        {{ p.name }}
-      </option>
-    </select>
-    <br />
-    <button (click)="setOption()" class="btn btn-info form-control">
-      <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span
-      >Request Chequebook
-    </button>
-    <br />
-  </div>
-</div>
+</body>

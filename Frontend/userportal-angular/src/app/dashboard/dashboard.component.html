@@ -1,11 +1,4 @@
-<head>
-  <title>Website menu 07</title>
-  <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-
+<!-- <head>
   <link
     href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
     rel="stylesheet"
@@ -16,7 +9,7 @@
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
   />
-</head>
+</head> -->
 <body>
   <section class="ftco-section">
     <nav
@@ -38,13 +31,21 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav m-auto">
             <li class="nav-item active">
-              <a routerLink="/smaple" class="nav-link">Home</a>
+              <a routerLink="/dashboard" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a routerLink="/home" class="nav-link">Check Balance</a>
+            </li>
+            <li class="nav-item active">
+              <a routerLink="/editProfile" class="nav-link">Profile setting</a>
+            </li>
+            <li class="nav-item active">
+              <a routerLink="/login" class="nav-link">Logout</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- END nav -->
   </section>
 </body>
 
@@ -81,12 +82,12 @@
                   <div></div>
                   <div></div>
                 </div>
-                <a routerLink="/user-account" class="hex-content">
+                <a routerLink="/transactionHistory" class="hex-content">
                   <span class="hex-content-inner">
                     <span class="icon">
                       <i class="fa fa-universal-access"></i>
                     </span>
-                    <span class="title">User Account Info</span>
+                    <span class="title">Transcation History</span>
                   </span>
                   <svg
                     viewBox="0 0 173.20508075688772 200"
@@ -113,108 +114,12 @@
                   <div></div>
                   <div></div>
                 </div>
-                <a routerLink="/checkbook-requests" class="hex-content">
+                <a routerLink="/transferHistory" class="hex-content">
                   <span class="hex-content-inner">
                     <span class="icon">
                       <i class="fa fa-bullseye"></i>
                     </span>
-                    <span class="title">CheckBook Requests</span>
-                  </span>
-                  <svg
-                    viewBox="0 0 173.20508075688772 200"
-                    height="200"
-                    width="174"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                      fill="#1e2530"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-              <div class="hexagon-item">
-                <div class="hex-item">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <div class="hex-item">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <a routerLink="/loanrequest" class="hex-content">
-                  <span class="hex-content-inner">
-                    <span class="icon">
-                      <i class="fa fa-braille"></i>
-                    </span>
-                    <span class="title">LoanRequests</span>
-                  </span>
-                  <svg
-                    viewBox="0 0 173.20508075688772 200"
-                    height="200"
-                    width="174"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                      fill="#1e2530"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-              <div class="hexagon-item">
-                <div class="hex-item">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <div class="hex-item">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <a routerLink="/authorize" class="hex-content">
-                  <span class="hex-content-inner">
-                    <span class="icon">
-                      <i class="fa fa-id-badge"></i>
-                    </span>
-                    <span class="title">Authorization<br />(KYC)</span>
-                  </span>
-                  <svg
-                    viewBox="0 0 173.20508075688772 200"
-                    height="200"
-                    width="174"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
-                      fill="#1e2530"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-              <div class="hexagon-item">
-                <div class="hex-item">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <div class="hex-item">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <a routerLink="/transcation" class="hex-content">
-                  <span class="hex-content-inner">
-                    <span class="icon">
-                      <i class="fa fa-life-ring"></i>
-                    </span>
-                    <span class="title">Transcation History</span>
+                    <span class="title">Transfer History</span>
                   </span>
                   <svg
                     viewBox="0 0 173.20508075688772 200"
@@ -244,9 +149,42 @@
                 <a routerLink="/transfer" class="hex-content">
                   <span class="hex-content-inner">
                     <span class="icon">
-                      <i class="fa fa-clipboard"></i>
+                      <i class="fa fa-braille"></i>
                     </span>
-                    <span class="title">Transfer History</span>
+                    <span class="title">Transfer Money</span>
+                  </span>
+                  <svg
+                    viewBox="0 0 173.20508075688772 200"
+                    height="200"
+                    width="174"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                      fill="#1e2530"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="hexagon-item">
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <a routerLink="/chequebookRequest" class="hex-content">
+                  <span class="hex-content-inner">
+                    <span class="icon">
+                      <i class="fa fa-id-badge"></i>
+                    </span>
+                    <span class="title">Request Checkbook</span>
                   </span>
                   <svg
                     viewBox="0 0 173.20508075688772 200"
@@ -273,12 +211,76 @@
                   <div></div>
                   <div></div>
                 </div>
-                <a (click)="logout()" class="hex-content">
+                <a routerLink="/deposite" class="hex-content">
+                  <span class="hex-content-inner">
+                    <span class="icon">
+                      <i class="fa fa-life-ring"></i>
+                    </span>
+                    <span class="title">Deposit</span>
+                  </span>
+                  <svg
+                    viewBox="0 0 173.20508075688772 200"
+                    height="200"
+                    width="174"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                      fill="#1e2530"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="hexagon-item">
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <a routerLink="/withdraw" class="hex-content">
+                  <span class="hex-content-inner">
+                    <span class="icon">
+                      <i class="fa fa-clipboard"></i>
+                    </span>
+                    <span class="title">Withdraw</span>
+                  </span>
+                  <svg
+                    viewBox="0 0 173.20508075688772 200"
+                    height="200"
+                    width="174"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                      fill="#1e2530"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="hexagon-item">
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <a routerLink="/applyloan" class="hex-content">
                   <span class="hex-content-inner">
                     <span class="icon">
                       <i class="fa fa-map-signs"></i>
                     </span>
-                    <span class="title">Logout</span>
+                    <span class="title">Apply Loan</span>
                   </span>
                   <svg
                     viewBox="0 0 173.20508075688772 200"

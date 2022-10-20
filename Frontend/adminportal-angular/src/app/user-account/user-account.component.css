@@ -1,7 +1,15 @@
 @media
 only screen and (max-width: 1000px) {
-  table, thead, tbody, th, td, tr,nav {
+   thead, tbody, th, td, tr,nav {
     display: block;
+  }
+
+  table {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    height: 100vh;
+    overflow: hidden;
   }
 
   thead tr {
