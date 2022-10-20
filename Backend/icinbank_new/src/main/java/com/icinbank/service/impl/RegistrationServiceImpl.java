@@ -82,16 +82,7 @@ public class RegistrationServiceImpl implements RegistrationService{
 		return false;
 	}
 	
-//	@Override
-//	public boolean PanAlreadyExists(String pan) {
-//		try {
-//			User u=dao.findByPan(pan);
-//			System.out.println(u.toString());
-//			return true;
-//		} catch (Exception e) {
-//		}
-//		return false;
-//	}
+
 	
 	@Override
 	public boolean PhoneAlreadyExists(long l) {
