@@ -15,7 +15,7 @@ export class AuthenticationService {
   authenticate(login: LoginData): boolean {
     if (this.checkCredentials(login)) {
       this.isAuthenticated = true;
-      this.router.navigate(['../smaple']);
+      this.router.navigate(['../home']);
       return true;
     }
     alert("Incorrect Login or Password");

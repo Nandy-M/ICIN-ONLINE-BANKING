@@ -18,7 +18,7 @@ const routes: Routes = [
   {path: 'transcation', component:TranscationHistoryComponent, canActivate: [AuthGuard]},
   {path: 'transfer', component:TransferDetailsComponent},
   {path: 'loanrequest', component:LoanComponent, canActivate: [AuthGuard]},
-  {path:'smaple', component:SampleComponent}
+  {path:'home', component:SampleComponent}
 ];
 
 @NgModule({

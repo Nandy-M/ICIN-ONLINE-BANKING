@@ -53,6 +53,7 @@ export class LoginComponent implements OnInit {
       (data : any) =>{
         localStorage.setItem('login',data.loginStatus);
         localStorage.setItem('username',data.username);
+        localStorage
         if(data.loginStatus==true){
           Swal.fire({
             icon: 'success',
@@ -60,7 +61,7 @@ export class LoginComponent implements OnInit {
             showConfirmButton: false,
             timer: 2000
           })
-          this.router.navigate(['/dashboard']);
+          this.router.navigate(['/home']);
         }
         else{
           Swal.fire({
