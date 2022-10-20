@@ -15,6 +15,7 @@ import { TransferHistoryComponent } from './transfer-history/transfer-history.co
 import { ApplyLoanComponent } from './apply-loan/apply-loan.component';
 import { DepositComponent } from './deposit/deposit.component';
 import { WithdrawComponent } from './withdraw/withdraw.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -29,7 +30,8 @@ const routes: Routes = [
   {path:'applyloan', component:ApplyLoanComponent,canActivate:[AuthGuard]},
   {path:'deposite', component:DepositComponent,canActivate:[AuthGuard]},
   {path:'withdraw', component:WithdrawComponent,canActivate:[AuthGuard]},
-  { path: '**', redirectTo: '/login' }
+  {path:'dashboard', component:DashboardComponent,canActivate:[AuthGuard]},
+  { path: '**', redirectTo: '/login' },
 
 ];
 

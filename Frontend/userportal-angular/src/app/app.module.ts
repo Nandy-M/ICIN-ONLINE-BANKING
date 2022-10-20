@@ -19,6 +19,7 @@ import { TransferHistoryComponent } from './transfer-history/transfer-history.co
 import { ApplyLoanComponent } from './apply-loan/apply-loan.component';
 import { DepositComponent } from './deposit/deposit.component';
 import { WithdrawComponent } from './withdraw/withdraw.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -36,6 +37,7 @@ import { WithdrawComponent } from './withdraw/withdraw.component';
     ApplyLoanComponent,
     DepositComponent,
     WithdrawComponent,
+    DashboardComponent,
   
   ],
   imports: [

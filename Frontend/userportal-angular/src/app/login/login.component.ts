@@ -60,7 +60,7 @@ export class LoginComponent implements OnInit {
             showConfirmButton: false,
             timer: 2000
           })
-          this.router.navigate(['/home']);
+          this.router.navigate(['/dashboard']);
         }
         else{
           Swal.fire({

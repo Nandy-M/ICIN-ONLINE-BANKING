@@ -1,20 +1,59 @@
-<table class="table table-bordered-md" style="overflow-x: auto">
-  <thead>
-    <tr>
-      <th style="text-align: center">Date</th>
-      <th style="text-align: center">Transaction Id</th>
-      <th style="text-align: center">Amount</th>
-      <th style="text-align: center">Sender Account Number</th>
-      <th style="text-align: center">Receiver Account Number</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let transfer of transferList">
-      <td style="text-align: center">{{ transfer.date }}</td>
-      <td style="text-align: center">{{ transfer.id }}</td>
-      <td style="text-align: center">{{ transfer.amount }}</td>
-      <td style="text-align: center">{{ transfer.saccount }}</td>
-      <td style="text-align: center">{{ transfer.raccount }}</td>
-    </tr>
-  </tbody>
-</table>
+<section class="ftco-section">
+  <nav
+    class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+    id="ftco-navbar"
+  >
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#ftco-nav"
+        aria-controls="ftco-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="fa fa-bars"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a routerLink="/dashboard" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a routerLink="/home" class="nav-link">Check Balance</a>
+          </li>
+          <li class="nav-item active">
+            <a routerLink="/editProfile" class="nav-link">Profile setting</a>
+          </li>
+          <li class="nav-item active">
+            <a routerLink="/login" class="nav-link">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+<body>
+  <table class="table table-striped" style="overflow-x: auto">
+    <thead>
+      <tr>
+        <th style="text-align: center">Date</th>
+        <th style="text-align: center">Transaction Id</th>
+        <th style="text-align: center">Amount</th>
+        <th style="text-align: center">Sender Account Number</th>
+        <th style="text-align: center">Receiver Account Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let transfer of transferList">
+        <td style="text-align: center">{{ transfer.date }}</td>
+        <td style="text-align: center">{{ transfer.id }}</td>
+        <td style="text-align: center">{{ transfer.amount }}</td>
+        <td style="text-align: center">{{ transfer.saccount }}</td>
+        <td style="text-align: center">{{ transfer.raccount }}</td>
+      </tr>
+    </tbody>
+  </table>
+</body>

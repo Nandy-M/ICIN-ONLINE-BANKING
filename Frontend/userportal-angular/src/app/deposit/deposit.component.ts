@@ -42,6 +42,7 @@ get fval() { return this.transferForm.controls; }
       return;
     }
     console.log(this.transferForm.value.amount);
+    console.log(this.transferForm.value.saccountno);
     if(this.transferForm.value.amount > 0){ 
     this.loading = true;
     const result:any = Object.assign({}, this.transferForm.value);
@@ -57,7 +58,7 @@ get fval() { return this.transferForm.controls; }
           Swal.fire({
             icon: 'success',
             title: 'Transaction successful',
-            text:data.responseMessage
+            text:data.responseMessage,
           })
          }
          else{

@@ -2,7 +2,10 @@
 only screen and (max-width: 1000px) {
   table, thead, tbody, th, td, tr,nav {
     display: block;
+
   }
+ 
+ 
 
   thead tr {
     position: absolute;
